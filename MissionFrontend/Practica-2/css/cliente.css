@@ -1,0 +1,57 @@
+/* .block{ color: inherit; }
+.block__element{ color: inherit; }
+.block__element--modifier{ color: inherit; } */
+body {
+    background-color: rgb(221, 221, 221);
+    margin: 0;
+}
+
+.nav {
+    background-color: white;
+    height: 70px;
+    border-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    padding-left: 6em;
+    height: 60px;
+}
+
+.nav__title {
+    padding-right: 2em;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(167, 52, 52);
+}
+
+.menu {
+    background-color: rgb(221, 221, 221);
+    padding-left: 10px;
+    display: flex;
+}
+
+.side {
+    padding: 10px;
+    padding-left: 5em;
+    font-size: 1.5em;
+}
+
+.sucursales {
+    padding: 10px;
+}
+
+table,
+th,
+td {
+    margin: 6px;
+    padding: 6px;
+    margin-right: auto;
+    width: max-content;
+    text-align: left;
+    border: 1px solid;
+    border-collapse: collapse;
+}

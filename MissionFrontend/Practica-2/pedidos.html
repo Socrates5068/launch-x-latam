@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+
+    <link rel="stylesheet" href="css/cliente.css">
+</head>
+
+<body>
+
+    <!-- Nav bar -->
+    <nav class="nav">
+        <img class="nav__logo" src="images/logo.png" alt="">
+        <span class="nav__title">Astro pastelería</span>
+    </nav>
+
+</body>
+<section>
+    <h2> ¡Realiza tu pedido! </h2>
+    <!-- Acá agregaría algún tipo de vinculación con la página de pastelero para indicar al cte en que sucursal
+     contamos con stock-->
+    <form>
+
+        <h3>Elije una sucursal:</h3>
+        <select name="sucursal" id="sucursal">
+            <option value="1">1ro de abril Nº 33</option>
+            <option value="2">Bustillos Nº 25</option>
+        </select>
+
+        <h3>Ingrese su información:</h3>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Perez">
+
+                <label for="teléfono">Teléfono:</label>
+                <input type="tel" id="teléfono" name="teléfono" placeholder="Ej. 85964752">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Ej. juan@correo.com">
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ej. Calle xxx">
+            </div>
+            <div>
+                <label for="descripción">Descripción:</label>
+                <input type="text" id="descripción" name="descripción" >
+            </div>
+
+            <h3>Elige las características de tu pastel:</h3>
+            <p>¿Qué sabor y cuantas capas tendrá?</p>
+            <input type="radio" id="chocolate" name="sabor" value="chocolate">
+            <label for="chocolate">Chocolate</label>
+            <label for="chocolateN"></label>
+            <input type="number" placeholder="Cuantos?" id="chocolateN" name="chocolateN"><br>
+
+            <input type="radio" id="limon" name="sabor" value="limon">
+            <label for="limon">Limón</label>
+            <label for="limon"></label>
+            <input type="number" placeholder="Cuantos?" id="limon" name="limon"><br>
+
+            <input type="radio" id="tresLeches" name="sabor" value="tresLeches">
+            <label for="tresLeches">Tres leches</label>
+            <label for="tresLeches"></label>
+            <input type="number" placeholder="Cuantos?" id="tresLeches" name="tresLeches"><br>
+
+            <p>Combinar sabores</p> 
+            <label for="chocolate">Chocolate</label>
+            <input type="checkbox" id="chocolate" name="chocolate" />
+            <label for="limon">Limón</label>
+            <input type="checkbox" id="limon" name="limon" />
+            <label for="tresLeches">Chocolate</label>
+            <input type="checkbox" id="tresLeches" name="tresLeches" />
+
+            <p>Seleccione los adornos</p>
+            <input type="checkbox" id="figuras" name="adición" value="figuras">
+            <label for="figuras">Figuras comestibles</label>
+
+            <input type="checkbox" id="caramelo" name="adición" value="caramelo">
+            <label for="caramelo">Formas en caramelo</label>
+
+            <input type="checkbox" id="azucar" name="adición" value="azucar">
+            <label for="azucar">Motivos de azucar impalpable</label>
+            <hr>
+            <button type="submit">Realizar pedido </button> <a href="./cliente.html">Volver</a>
+
+    </form>
+
+</section>
+
+</html>
